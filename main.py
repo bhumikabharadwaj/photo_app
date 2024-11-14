@@ -6,7 +6,7 @@ from flask import Flask, redirect, request, render_template, send_from_directory
 from google.cloud import storage
 import google.generativeai as genai
 
-keysFile = os.path.join(os.getcwd, "secret_keys.json")
+keysFile = os.path.join(os.getcwd(), "secret_keys.json")
 
 with open(keysFile) as config:
    config = json.load(config)
